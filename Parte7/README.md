@@ -1,5 +1,5 @@
-Parte 6 Silex PHP
+Parte 7 Silex PHP
 =====================================
 
--Controladores en clases
+-Parámetros, servicios y servicios compartidos en la aplicación
 
