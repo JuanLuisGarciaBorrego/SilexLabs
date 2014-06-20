@@ -1,0 +1,10 @@
+{% extends 'base.twig' %}
+{% block contenido %}
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+    	<a href="{{ path('admin_logout') }}"><i class="fa fa-paper-plane-o"></i> Salir {{user}}</a>
+	{% endif %}
+    <p>
+    	<i class="fa fa-shield"></i> Zona admin
+    </p>
+{% endblock %}
