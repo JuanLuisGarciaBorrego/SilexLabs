@@ -9,8 +9,6 @@ use Silex\Provider\SecurityServiceProvider;
 use Silex\Provider\DoctrineServiceProvider;
 use JuanLuis\User\UserProvider;
 
-use Silex\Provider\ServiceControllerServiceProvider;
-
 $app = new Application();
 $app['debug'] = true;
 
@@ -31,7 +29,7 @@ $app->register(new SecurityServiceProvider(), array(
             'pattern' => '^/admin',
             'form' => array('login_path' => '/login', 'check_path' => '/admin/login_check'),
             'logout' => array('logout_path' => '/admin/logout'),
-            'users' => $app->share(function() use ($app){
+            'users' => $app->share(function () use ($app) {
                 return new UserProvider($app['db']);
             }),
         ),

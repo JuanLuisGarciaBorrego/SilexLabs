@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $app['saludos'] = [
     'informal'   =>  'Hola colega!! xD',

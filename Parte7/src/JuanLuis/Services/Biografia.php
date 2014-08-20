@@ -1,15 +1,15 @@
-<?php 
+<?php
 namespace JuanLuis\Services;
 
-class Biografia{
+class Biografia
+{
+    public function profesional()
+    {
+        return "Desarrollador PHP";
+    }
 
-	public function profesional()
-	{
-		return "Desarrollador PHP";
-	}
-
-	public function personal()
-	{
-		return "Apasionado de la tecnología";
-	}
+    public function personal()
+    {
+        return "Apasionado de la tecnología";
+    }
 }

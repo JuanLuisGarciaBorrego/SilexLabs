@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $app['despedidas'] = [
     'informal'   =>  'Nos vemos!',
