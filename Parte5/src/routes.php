@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $app->mount('/admin', include 'Controllers/Backend.php');
 

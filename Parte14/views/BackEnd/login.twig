@@ -1,7 +1,7 @@
 {% extends 'base.twig' %}
 {% block contenido %}
 
-    
+
     <form action="{{ path('admin_login_check') }}" method="post">
     {{ error | replace({"Bad credentials": "Usuario/Password incorrecto."})}}
 	    <input type="text" name="_username" value="{{ last_username }}" />

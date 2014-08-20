@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 use Silex\Application;
 use Silex\Provider\SwiftmailerServiceProvider;
@@ -11,11 +11,11 @@ $app['email'] = 'miEmail@gmail.com'
 $app->register(new SwiftmailerServiceProvider(), array(
     'swiftmailer.options' => array(
         'host' => 'smtp.gmail.com',
-	    'port' => 465,
-	    'username' => $app['email'],
-	    'password' => 'tuPasswordGmail',
-	    'encryption' => 'ssl',
-	    'auth_mode' => 'login'
+        'port' => 465,
+        'username' => $app['email'],
+        'password' => 'tuPasswordGmail',
+        'encryption' => 'ssl',
+        'auth_mode' => 'login'
     )
 ));
 

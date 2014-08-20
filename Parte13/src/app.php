@@ -34,5 +34,4 @@ $app->register(new SecurityServiceProvider(), array(
     )
 ));
 
-
 return $app;
