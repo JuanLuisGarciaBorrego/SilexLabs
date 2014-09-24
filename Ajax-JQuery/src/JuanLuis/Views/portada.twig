@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    	<meta charset="utf-8">
+		<title>Hola!! =)</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	</head>
+
+	<body>
+        <div class="container">
+           <h1>{{ title }}</h1>
+
+            <form action="{{ path('quien-soy') }}" method="post" id="formulario">
+                <input type="submit" class="btn btn-success" value="¿Quién soy?">
+            </form>
+            <br/>
+            <p class="bg-success"></p>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/mi.js"></script>
+	</body>
+</html>
