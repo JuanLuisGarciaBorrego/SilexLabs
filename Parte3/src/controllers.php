@@ -13,7 +13,7 @@ $app->post('/contacto', function (Request $request) use ($app) {
 
 */
 //varios métodos
-$app->match('/metodos/', function () use ($app) {
+$app->match('/metodos/', function () {
     return "Recibe por post y get";
 })
 ->method('GET|POST');
